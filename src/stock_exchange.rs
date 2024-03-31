@@ -500,7 +500,7 @@ pub fn stock_exchange() -> Result<()> {
         move || {
             // Generate number to select stock
             let mut rng = rand::thread_rng();
-            let r_stock = rng.gen_range(0..=stocks.len());
+            let r_stock = rng.gen_range(0..stocks.len());
 
             // Clone Arc            
             let stock = stocks[r_stock].clone();
